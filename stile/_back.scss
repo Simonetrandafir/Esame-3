@@ -1,0 +1,578 @@
+.account{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px black;
+    margin-top: 96px;
+    #profilo{
+        width: 130px;
+        height: 150px;
+        border-radius: 50%;
+        border: solid 3px black;
+    }
+    .btn{
+        margin-bottom: 9px;
+    }
+}
+#formCompleti{
+    border-bottom: solid 1px black;
+    border-collapse: collapse;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 96%;
+    border: solid 3px;
+    .tableBox{
+        width: 100%;
+            overflow: auto;
+            max-height: 469px;
+        #complContatti{
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            table{
+                border-collapse: collapse;
+                thead{
+                    tr{
+                        th{
+                            border: solid 1px;
+                            padding: 9px;
+                        }
+                    }
+                }
+                tbody{
+                    text-align: center;
+                    tr{
+                        td{
+                            border: solid 1px;
+                            padding: 9px;
+                            p{
+                                padding: 0px;
+                            }
+                            @import "bottonelock";
+                        }
+                        .commentoView{
+                            p{
+                                overflow: auto;
+                                width: 210px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .cmd{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 12px;
+        gap: 9px;
+        
+    }
+
+}
+#formtabella{
+    border-bottom: solid 1px black;
+    border-collapse: collapse;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 96%;
+    border: solid 3px;
+    .tableBox{
+        width: 100%;
+        overflow: auto;
+        max-height: 469px;
+        #tabellaContatti{
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            table{
+                border-collapse: collapse;
+                thead{
+                    tr{
+                        th{
+                            border: solid 1px;
+                            padding: 9px;
+                        }
+                    }
+                }
+                tbody{
+                    text-align: center;
+                    tr{
+                        td{
+                            border: solid 1px;
+                            padding: 9px;
+                            p{
+                                padding: 0px;
+                            }
+                            @import "bottonelock";
+                        }
+                        .commentoView{
+                            p{
+                                overflow: auto;
+                                width: 210px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .cmd{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 12px;
+        gap: 9px;
+        
+    }
+
+}
+//INSERISCI CONTENUTO
+//INFO
+#insertInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #formInsert{
+        overflow: auto;
+        fieldset{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            align-content: center;
+            border-radius: 6px;
+            padding: 0px;
+            width: 900px;
+            padding-bottom: 30px;
+            legend{
+                border: solid 1px gray;
+                padding: 9px;
+                border-radius: 9px;
+                text-align: center;
+            }
+            .label{
+                margin: 21px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .showPass{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    position: absolute;
+                    margin-top: 27px;
+                    margin-left: 139px;
+                    #showPass{
+                        display: none;
+                    }
+                    #show{
+                        width: 20px;
+                        height: 20px;
+                    }
+                    #hide{
+                        display: none;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+                .input{
+                    border: solid 1px black;
+                    border-radius: 3px;
+                    height: 30px;
+                    text-align: center;
+                }
+                .area{
+                    overflow: auto;
+                    height: 120px;
+                    width: 820px;
+                    border: solid 1px black;
+                    border-radius: 6px;
+                    padding: 9px;
+                }
+            }
+            
+        }
+        .btnForm{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: -36px;
+        }
+    }
+}
+.insertBox{
+    display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 30px;
+        gap: 30px;
+        border-bottom: solid 1px black;
+    .boxContenuti{
+        
+        
+        //PORTFOLIO
+        #insertPortfolio{
+            #formPortfolio{
+                fieldset{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    align-content: center;
+                    border-radius: 6px;
+                    padding: 0px;
+                    legend{
+                        border: solid 1px gray;
+                        padding: 9px;
+                        border-radius: 9px;
+                        text-align: center;
+                    }
+                    .label{
+                        margin: 21px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .input{
+                            border: solid 1px black;
+                            border-radius: 3px;
+                            height: 30px;
+                            text-align: center;
+                        }
+                        .area{
+                            height: 100px;
+                            width: 250px;
+                            border: solid 1px black;
+                            border-radius: 6px;
+                            padding: 9px;
+                        }
+                    }
+                    .btnForm{
+                        margin-bottom: 21px;
+                    }
+                }
+            }
+        }
+        //SKILLS
+        #insertSkills{
+            #formSkills{
+                fieldset{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    align-content: center;
+                    border-radius: 6px;
+                    padding: 0px;
+                    legend{
+                        border: solid 1px gray;
+                        padding: 9px;
+                        border-radius: 9px;
+                        text-align: center;
+                    }
+                    .label{
+                        margin: 21px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .input{
+                            border: solid 1px black;
+                            border-radius: 3px;
+                            height: 30px;
+                            text-align: center;
+                        }
+                        .area{
+                            height: 100px;
+                            width: 250px;
+                            border: solid 1px black;
+                            border-radius: 6px;
+                            padding: 9px;
+                        }
+                    }
+                    .btnForm{
+                        margin-bottom: 21px;
+                    }
+                }
+            }
+        }
+        //SERVIZI
+        #insertServizi{
+            #formServizi{
+                fieldset{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    align-content: center;
+                    border-radius: 6px;
+                    padding: 0px;
+                    legend{
+                        border: solid 1px gray;
+                        padding: 9px;
+                        border-radius: 9px;
+                        text-align: center;
+                    }
+                    .label{
+                        margin: 21px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .input{
+                            border: solid 1px black;
+                            border-radius: 3px;
+                            height: 30px;
+                            text-align: center;
+                        }
+                        .area{
+                            height: 100px;
+                            width: 250px;
+                            border: solid 1px black;
+                            border-radius: 6px;
+                            padding: 9px;
+                        }
+                    }
+                    .btnForm{
+                        margin-bottom: 21px;
+                    }
+                }
+            }
+        }
+        //ESAMI
+        #insertEsami{
+            #formEsami{
+                fieldset{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    align-content: center;
+                    border-radius: 6px;
+                    padding: 0px;
+                    legend{
+                        border: solid 1px gray;
+                        padding: 9px;
+                        border-radius: 9px;
+                        text-align: center;
+                    }
+                    .label{
+                        margin: 21px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .input{
+                            border: solid 1px black;
+                            border-radius: 3px;
+                            height: 30px;
+                            text-align: center;
+                        }
+                        .area{
+                            height: 100px;
+                            width: 250px;
+                            border: solid 1px black;
+                            border-radius: 6px;
+                            padding: 9px;
+                        }
+                    }
+                    .btnForm{
+                        margin-bottom: 21px;
+                    }
+                }
+            }
+        }
+    }
+}
+//RIMUOVI INFO
+#formAccessi{
+    border-bottom: solid 1px black;
+    border-collapse: collapse;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .tableBox{
+        width: 100%;
+        overflow: auto;
+        max-height: 300px;
+        #tabellaInfo{
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            table{
+                border-collapse: collapse;
+                thead{
+                    tr{
+                        th{
+                            border: solid 1px;
+                            padding: 9px;
+                        }
+                    }
+                }
+                tbody{
+                    text-align: center;
+                    tr{
+                        td{
+                            border: solid 1px;
+                            padding: 9px;
+                            
+                            p{
+                                padding: 0px;
+                            }
+                            @import "bottonelock";
+                        }
+                        .commentoView{
+                            overflow: auto;
+                            p{
+                                
+                                height: 100px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .cmd{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 12px;
+        gap: 9px;
+        
+    }
+
+}
+//RIMUOVI CONTENUTO
+#formContenuto{
+    margin-bottom: 30px;
+    border-bottom: solid 1px black;
+
+    .cmd{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 12px;
+        gap: 9px;
+        
+    }
+    .rimuoviBox{
+        margin-top: 20px;
+    
+        .contenitore{
+            border: solid 3px;
+            margin: 12px;
+            overflow: auto;
+            max-height: 390px;
+            width: 90%;
+            .tabella{
+                border-collapse: collapse;
+                width: 100%;
+                overflow: auto;
+                max-height: 300px;
+                gap: 30px;
+                thead{
+                    tr{
+                        th{
+                            border: solid 1px;
+                            padding: 9px;
+                        }
+                    }
+                }
+                tbody{
+                    text-align: center;
+                    tr{
+                        td{
+                            border: solid 1px;
+                            padding: 9px;
+                            p{
+                                padding: 0px;
+                            }
+                            @import "bottonelock";
+                        }
+                        .commentoView{
+                            p{
+                                overflow: auto;
+                                width: 210px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: 426px){
+    #insertInfo{
+        #formInsert{
+            fieldset{
+                legend{
+                }
+                .label{
+                    .showPass{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        position: relative;
+                        left: 36%;
+                        margin-top: 0px;
+                        margin-left: 0px;
+                        #showPass{
+                            display: none;
+                
+                        }
+                        #show{
+                            width: 20px;
+                            height: 20px;
+                            position: absolute;
+                            margin-bottom: 33px;
+                        }
+                        #hide{
+                            display: none;
+                            width: 20px;
+                            height: 20px;
+                            position: absolute;
+                            margin-bottom: 33px;
+                        }
+                    }
+                    .input{
+                        border: solid 1px black;
+                        border-radius: 3px;
+                        height: 30px;
+                        text-align: center;
+                    }
+                    .area{
+                        overflow: auto;
+                        height: 120px;
+                        width: 820px;
+                        border: solid 1px black;
+                        border-radius: 6px;
+                        padding: 9px;
+                    }
+                }
+                
+            }
+            .btnForm{
+                display: flex;
+                justify-content: center;
+                position: relative;
+                top: -36px;
+            }
+        }
+    }
+}
