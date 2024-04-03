@@ -14,9 +14,9 @@ require_once 'connessione.php';
     if (strlen($nomeUtente) > 35 || strlen($cognomeUtente) > 35 || strlen($aziendaUtente) > 50
     || strlen($emailUtente) > 50 || strlen($telUtente) > 10 || strlen($commentoUtente) > 360
     || !preg_match('/^[a-zA-Z]+$/', $nomeUtente) || !preg_match('/^[a-zA-Z]+$/', $cognomeUtente)
-    || !preg_match('/^[a-zA-Z.,:0-9 -]+$/', $aziendaUtente) || !preg_match('/^[0-9]+$/', $telUtente)
+    || !preg_match('/^[a-zA-Z.,:0-9 - ]+$/', $aziendaUtente) || !preg_match('/^[0-9]+$/', $telUtente)
     || !preg_match('/^[^0-9][A-z0-9._%+-]+([.][A-z0-9_]+)*[@][A-z0-9_]+([.][A-z0-9_]+)*[.][A-z]{2,4}$/', $emailUtente)
-    || !preg_match('/^[a-zA-Z0-9.,:;?!%+-]+$/', $commentoUtente)) {
+    || !preg_match('/^[a-zA-Z0-9.,:;?!%+- ]+$/', $commentoUtente)) {
         exit();
     }
 

@@ -7,9 +7,9 @@
 // define('UTENTEDB','root');
 // define('PASSWORD','');
 
-$indirizzoDb = "Localhost";
-$db = "";
-$utenteDb = "";
+$indirizzoDb = "localhost";
+$db = "webportfolio";
+$utenteDb = "root";
 $passwordDb = "";
 
 

@@ -13,6 +13,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
+    $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
+    
     // Gestione dell'immagine
     $immaginePath = 'immagini/';  // Cartella dove salvare le immagini
     $immagineName = $_FILES['img']['name'];
@@ -42,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $query->bindParam(':telefono', $telefono, PDO::PARAM_STR);
         $query->bindParam(':descrizione', $descrizione, PDO::PARAM_STR);
         $query->bindParam(':username', $username, PDO::PARAM_STR);
-        $query->bindParam(':password', $password, PDO::PARAM_STR);
+        $query->bindParam(':password', $hashedPassword, PDO::PARAM_STR);
         $query->bindParam(':immagine', $immaginePathCompleto, PDO::PARAM_STR);
     
         $query->execute();

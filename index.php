@@ -42,6 +42,9 @@ $resultInfo = $conn->query($queryInfo);
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width" initial scale="1.0">
+        <meta name="description" content="Web developer, UI & UX designer">
+        <meta name="keywords" content="simone,trandafir,trandafirweb,web,Simone,Trandafir,UI,UX,ui,ux,simone trandafir, trandafir web">
+        <meta name="author" content="Simone Trandafir, Trandafir Web">
         <link rel="stylesheet" type="text/css" href="">
         <link rel="stylesheet" type="text/css" href="stile/stile.min.css">
         <title>Simone Trandafir</title>

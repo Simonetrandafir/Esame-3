@@ -10,10 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
         const servizio = document.getElementById('servizioUtente').value;
         const nome = document.getElementById('nomeUtente').value.trim();
         const cognome = document.getElementById('cognomeUtente').value.trim();
-        const azienda = document.getElementById('aziendaUtente').value.trim();
+        const azienda = document.getElementById('aziendaUtente').value;
         const email = document.getElementById('emailUtente').value.trim();
         const tel = document.getElementById('telUtente').value.trim();
-        const commento = document.getElementById('commentoUtente').value.trim();
+        const commento = document.getElementById('commentoUtente').value.replace(/\s/g, '-');
         const autorizzoDati = document.getElementById('checkDatiUtente').checked ? 1 : 0;
 
         // Rimuovi tutte le classi 'allerta' prima di iniziare la validazione
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         } else if (!/^[0-9 -]+$/.test(tel) && tel !==''|| !/^[a-zA-Z]+$/.test(nome) || !/^[a-zA-Z]+$/.test(cognome) ||
             !/^[^\d][\w.%+-]+(\.[\w]+)*@\w+([\.-]\w+)*\.\w{2,4}$/.test(email) ||
-            !/^[a-zA-Z0-9,:.-]+$/.test(azienda) &&  azienda !== ''|| !/^[a-zA-Z0-9.,:;?!%+-]+$/.test(commento) && commento !== '') {
+            !/^[a-zA-Z0-9,:.\- ]+$/.test(azienda) &&  azienda !== ''|| !/^[a-zA-Z0-9.,:;?!%+\- ]+$/.test(commento) && commento !== '') {
             msgErrore.textContent = 'I campi contengono valori non accettati';
             msgErrore.classList.add('error');
 
@@ -79,10 +79,10 @@ document.addEventListener('DOMContentLoaded', function () {
             // Aggiungi la classe 'allerta' solo ai campi con valori non accettati
             if (!/^[a-zA-Z ]+$/.test(nome)) document.getElementById('nomeUtente').classList.add('allerta');
             if (!/^[a-zA-Z ]+$/.test(cognome)) document.getElementById('cognomeUtente').classList.add('allerta');
-            if (!/^[a-zA-Z0-9,:.-]+$/.test(azienda) && azienda !== '') document.getElementById('aziendaUtente').classList.add('allerta');
+            if (!/^[a-zA-Z0-9,:.\- ]+$/.test(azienda) && azienda !== '') document.getElementById('aziendaUtente').classList.add('allerta');
             if (!/^[^\d][\w.%+-]+(\.[\w]+)*@\w+([\.-]\w+)*\.\w{2,4}$/.test(email)) document.getElementById('emailUtente').classList.add('allerta');
             if (!/^[0-9 -]+$/.test(tel) && tel !== '') document.getElementById('telUtente').classList.add('allerta');
-            if (!/^[a-zA-Z0-9.,:;?!%+-]+$/.test(commento) && commento !== '') document.getElementById('commentoUtente').classList.add('allerta');
+            if (!/^[a-zA-Z0-9.,:;?!%+\- ]+$/.test(commento) && commento !== '') document.getElementById('commentoUtente').classList.add('allerta');
         } else {
             // Rimuovi l'elemento di errore e tutte le classi 'allerta'
             msgErrore.removeAttribute('class', 'error');
